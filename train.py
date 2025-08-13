@@ -5,7 +5,7 @@ import joblib
 # Đọc dữ liệu
 data = pd.read_csv("data/housing.csv")
 
-X = data[["Avg. Area Income", "Avg. Area House Age", "Avg. Area Number of Rooms", "Avg. Area Number of Bedrooms"]]
+X = data[["Avg. Area Income", "Avg. Area House Age", "Avg. Area Number of Rooms", "Avg. Area Number of Bedrooms", "Area Population"]]
 y = data["Price"]
 # Train model
 model = LinearRegression()
